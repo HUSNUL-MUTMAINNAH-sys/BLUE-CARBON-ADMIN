@@ -1,0 +1,71 @@
+:root {
+  /* Admin Color Palette - Light Theme with Dark Sidebar */
+  --sidebar-black: #123B56;
+  --sidebar-hover: #164E68;
+  --content-bg: #F0F6F9;
+  --content-white: #FFFFFF;
+  --text-dark: #0F2438;
+  --text-gray: #4A5F6D;
+  --text-light: #7A8C94;
+  --border-light: #D4E3E9;
+  --border-gray: #BFD7E0;
+  
+  /* Accent Colors */
+  --accent-teal: #3FA9D6;
+  --accent-teal-2: #36A0CC;
+  --primary-dark: #2B6F8A;
+  --light-teal: #5DB5D9;
+  
+  /* Status Colors */
+  --danger: #ef4444;
+  --success: #22c55e;
+  --warning: #fbbf24;
+  
+  /* Typography */
+  --font-heading: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Manrope', 'Inter', sans-serif;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  /* Animation */
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 300ms;
+  --dur-med: 500ms;
+  --dur-slow: 800ms;
+
+  /* Legacy aliases for compatibility */
+  --deep-navy: var(--text-dark);
+  --ocean: var(--content-bg);
+  --dark-teal: var(--border-gray);
+  --teal-panel: var(--content-white);
+  --white: var(--text-dark);
+  --muted: var(--text-gray);
+  
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+  --overlay-darker: rgba(0, 0, 0, 0.7);
+
+  --border-subtle: var(--border-light);
+  --glass-bg: var(--content-white);
+
+  /* Aliases for map components */
+  --border: var(--border-light);
+  --border-strong: var(--border-gray);
+  --panel-bg: var(--content-white);
+  --dark-ocean: var(--content-bg);
+  --teal: var(--accent-teal);
+  --soft-teal: var(--light-teal);
+  --font-display: var(--font-heading);
+  --ease-standard: var(--ease-cinematic);
+
+  /* Admin UI component aliases */
+  --primary: var(--accent-teal);
+  --text: var(--text-dark);
+  --text-muted: var(--text-gray);
+  --surface: var(--content-white);
+  --surface-dim: var(--content-bg);
+  --surface-glass: var(--content-white);
+  --sidebar-bg: var(--sidebar-black);
+}

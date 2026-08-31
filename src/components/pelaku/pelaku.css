@@ -1,0 +1,183 @@
+/* ===== Pelaku Form ===== */
+.pelaku-form {
+  padding: 2rem;
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.pelaku-form-section {
+  margin-bottom: 2rem;
+}
+
+.pelaku-form-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.pelaku-section-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  padding-left: 0.85rem;
+  border-left: 4px solid var(--primary);
+  margin-bottom: 1.25rem;
+}
+
+.pelaku-section-divider {
+  border: none;
+  border-top: 1px solid var(--border-light);
+  margin: 2rem 0;
+}
+
+.pelaku-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.pelaku-form-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pelaku-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pelaku-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.pelaku-form-group label {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.pelaku-form-group input,
+.pelaku-form-group select,
+.pelaku-form-group textarea {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border-gray);
+  border-radius: 10px;
+  background: white;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.pelaku-form-group input:focus,
+.pelaku-form-group select:focus,
+.pelaku-form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(63, 169, 214, 0.15);
+}
+
+.pelaku-photo-upload {
+  border: 2px dashed var(--border-gray);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: var(--text-gray);
+  background: var(--surface-dim);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.pelaku-photo-upload:hover {
+  border-color: var(--primary);
+  background: rgba(63, 169, 214, 0.05);
+}
+
+.pelaku-photo-upload input {
+  display: none;
+}
+
+.pelaku-photo-preview-wrap {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.pelaku-photo-preview {
+  max-width: 240px;
+  max-height: 180px;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  display: block;
+}
+
+.pelaku-photo-remove {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pelaku-form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+/* ===== Pelaku Table ===== */
+.pelaku-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pelaku-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border-light);
+}
+
+.pelaku-avatar-fallback {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.pelaku-jenis-badge {
+  display: inline-flex;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: #e0f2fe;
+  color: #075985;
+}
+
+@media (max-width: 768px) {
+  .pelaku-form-grid,
+  .pelaku-form-grid.cols-3 {
+    grid-template-columns: 1fr;
+  }
+}

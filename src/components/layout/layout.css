@@ -1,0 +1,272 @@
+/* ===== Sidebar ===== */
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  background: var(--sidebar-black);
+  border-right: 1px solid #164E68;
+  z-index: 1000;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #164E68;
+}
+
+.brand-mark {
+  font-size: 1rem;
+  font-weight: 800;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: white;
+  color: white;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-text {
+  min-width: 0;
+}
+
+.brand-text strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.25;
+}
+
+.brand-text small {
+  display: block;
+  font-size: 0.7rem;
+  color: #9CABB8;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+.sidebar-menu {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sidebar-menu__label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4A5F6D;
+  padding: 0 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #9CABB8;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-link__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+.sidebar-link__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-link:hover {
+  background: var(--sidebar-hover);
+  color: white;
+}
+
+.sidebar-link--active {
+  background: var(--sidebar-black);
+  color: white;
+}
+
+.sidebar-footer {
+  padding: 1.25rem;
+  border-top: 1px solid #164E68;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.sidebar-user__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.sidebar-user strong {
+  display: block;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.sidebar-user small {
+  display: block;
+  font-size: 0.72rem;
+  color: #9CABB8;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-logout {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #164E68;
+  background: transparent;
+  color: #9CABB8;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sidebar-logout:hover {
+  color: white;
+  border-color: var(--danger, #ef4444);
+}
+
+.sidebar-public-link {
+  display: block;
+  text-align: center;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #164E68;
+  color: #9CABB8;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.sidebar-public-link:hover {
+  color: white;
+  border-color: var(--primary);
+}
+
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: white;
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-light);
+  color: var(--text-dark);
+}
+
+.sidebar-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-scrim {
+  display: none;
+}
+
+/* ===== Page container ===== */
+.page-container {
+  margin-left: 264px;
+  padding: 2.5rem 2.5rem 3rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    width: 250px;
+  }
+
+  .admin-sidebar--open {
+    transform: translateX(0);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .sidebar-toggle {
+    display: flex;
+  }
+
+  .sidebar-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .page-container {
+    margin-left: 0;
+    padding: 5rem 1.25rem 2.5rem;
+  }
+}
