@@ -23,14 +23,6 @@ const ICONS = {
       <circle cx="12" cy="10" r="2.5" />
     </svg>
   ),
-  pelaku: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="9" cy="8" r="3.2" />
-      <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
-      <circle cx="17.2" cy="9" r="2.4" />
-      <path d="M15.5 14.2c2.8.3 4.9 2.3 4.9 5.8" />
-    </svg>
-  ),
   berita: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
       <rect x="3.5" y="4" width="13" height="16" rx="1.5" />
@@ -50,7 +42,6 @@ const NAV_ITEMS = [
   { to: '/', end: true, icon: 'dashboard', label: 'Dashboard' },
   { to: '/berita', end: false, icon: 'berita', label: 'Berita' },
   { to: '/data-lahan', end: false, icon: 'lahan', label: 'Data Lahan' },
-  { to: '/data-pelaku', end: false, icon: 'pelaku', label: 'Data Pelaku' },
   { to: '/monitoring', end: false, icon: 'monitoring', label: 'MRV / Monitoring' },
 ];
 
