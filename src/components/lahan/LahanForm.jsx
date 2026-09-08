@@ -57,7 +57,7 @@ export default function LahanForm({ initialData, onSubmit, onCancel, isLoading }
         const data = await getAllLahan();
         const existing = data
           .map((l) => l.lokasi)
-          .filter((lokasi) => !!lokasi);
+          .filter((lokasi) => !!lokasi && lokasi !== 'Ujunglabbu'); // Filter out old location names
         const merged = Array.from(new Set([...DEFAULT_LOKASI_OPTIONS, ...existing]));
         setLokasiOptions(merged);
       } catch (error) {
