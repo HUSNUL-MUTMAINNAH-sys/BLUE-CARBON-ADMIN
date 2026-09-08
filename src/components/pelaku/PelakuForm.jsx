@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Button from '../common/Button';
 import './pelaku.css';
 
-const LOKASI_OPTIONS = ['Tamalangnge', 'Biring Kassi', 'Ujung Labbu'];
+const LOKASI_OPTIONS = ['Tamalangnge', 'Biring Kassi'];
 
 export default function PelakuForm({ initialData, onSubmit, onCancel, isLoading }) {
   const [formData, setFormData] = useState({

@@ -11,7 +11,7 @@ const WILAYAH_KECAMATAN = 'Bantaeng';
 // Daftar lokasi yang sudah tersedia pada sistem (data lahan.json / database).
 // Jika suatu saat ada lokasi baru yang sudah tersimpan di database, akan otomatis
 // ditambahkan ke pilihan dropdown ini (lihat useEffect di bawah).
-const DEFAULT_LOKASI_OPTIONS = ['Tamalangnge', 'Biring Kassi', 'Ujung Labbu'];
+const DEFAULT_LOKASI_OPTIONS = ['Tamalangnge', 'Biring Kassi'];
 
 const GELOMBANG_OPTIONS = ['Tenang', 'Tenang - Sedang', 'Sedang', 'Tinggi'];
 
