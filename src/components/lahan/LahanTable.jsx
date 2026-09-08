@@ -25,7 +25,7 @@ export default function LahanTable({ data, onDelete }) {
               <th>Pembudidaya</th>
               <th>Lokasi</th>
               <th>Jenis Budidaya</th>
-              <th>Luas (ha)</th>
+              <th>Luas (m²)</th>
               <th>Siklus (tahun)</th>
               <th>Status</th>
               <th>Koordinat</th>
@@ -38,7 +38,7 @@ export default function LahanTable({ data, onDelete }) {
                 <td><strong>{lahan.pembudidaya}</strong></td>
                 <td>{lahan.lokasi}</td>
                 <td>{lahan.jenisPelaku || '-'}</td>
-                <td>{lahan.luas.toFixed(2)}</td>
+                <td>{(lahan.luas * 10000).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}</td>
                 <td>{lahan.siklusPanen ?? lahan.siklus ?? '-'}</td>
                 <td><Badge status={lahan.status} /></td>
                 <td className="coord-cell">

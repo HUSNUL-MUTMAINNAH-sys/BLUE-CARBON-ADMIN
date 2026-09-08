@@ -106,7 +106,7 @@ export default function DetailLahan() {
 
           <div className="detail-field">
             <label className="detail-label">Luas Lahan</label>
-            <div className="detail-value">{lahan.luas} ha</div>
+            <div className="detail-value">{(lahan.luas * 10000).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} m²</div>
           </div>
 
           <div className="detail-field">
