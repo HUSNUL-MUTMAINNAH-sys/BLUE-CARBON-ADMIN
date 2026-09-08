@@ -268,7 +268,7 @@ export default function LahanForm({ initialData, onSubmit, onCancel, isLoading }
           </div>
 
           <div className="form-group">
-            <label htmlFor="luas">Luas Area (ha) *</label>
+            <label htmlFor="luas">Luas Area (m²) *</label>
             <input
               type="number"
               id="luas"
@@ -278,7 +278,7 @@ export default function LahanForm({ initialData, onSubmit, onCancel, isLoading }
               required
               step="0.01"
               min="0"
-              placeholder="Contoh: 0.75"
+              placeholder="Masukkan dalam hektar (ha). Contoh: 0.75 = 7.500 m²"
             />
           </div>
 
