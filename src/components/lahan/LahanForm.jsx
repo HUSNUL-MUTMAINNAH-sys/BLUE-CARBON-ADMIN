@@ -278,7 +278,7 @@ export default function LahanForm({ initialData, onSubmit, onCancel, isLoading }
               required
               step="0.01"
               min="0"
-              placeholder="Masukkan dalam hektar (ha). Contoh: 0.75 = 7.500 m²"
+              placeholder="Contoh: 0.75"
             />
           </div>
 
