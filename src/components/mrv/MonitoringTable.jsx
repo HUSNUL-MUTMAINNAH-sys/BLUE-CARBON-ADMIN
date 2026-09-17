@@ -48,7 +48,7 @@ export default function MonitoringTable({ data, onDelete }) {
                 <td>{formatTanggal(item.monitoring_date)}</td>
                 <td><strong>{item.lokasi || '-'}</strong></td>
                 <td>{item.pembudidaya || '-'}</td>
-                <td>{Number(item.production).toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                <td>{Number(item.production).toLocaleString('id-ID')}</td>
                 <td>{formatRupiah(item.revenue)}</td>
                 <td>
                   <div className="action-buttons">
