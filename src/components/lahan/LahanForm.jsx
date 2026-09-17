@@ -268,7 +268,7 @@ export default function LahanForm({ initialData, onSubmit, onCancel, isLoading }
           </div>
 
           <div className="form-group">
-            <label htmlFor="luas">Luas Area (m²) *</label>
+            <label htmlFor="luas">Luas Area (m) *</label>
             <input
               type="number"
               id="luas"

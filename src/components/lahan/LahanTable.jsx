@@ -25,7 +25,7 @@ export default function LahanTable({ data, onDelete }) {
               <th>Pembudidaya</th>
               <th>Lokasi</th>
               <th>Jenis Budidaya</th>
-              <th>Luas (m²)</th>
+              <th>Luas (m)</th>
               <th>Siklus (tahun)</th>
               <th>Status</th>
               <th>Koordinat</th>
